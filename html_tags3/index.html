@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>html tegs part 3(form)</title>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+
+	<body>
+		<form action="#" method="post" enctype="multipart/form-data">
+		<!-- form оболочка формы отвечает за передачу данных 
+			Атрибут action отвечает за место назначение данных (нельзя остовлять пустым)
+		 	Атрибут method отвечает за метод передачи данных-->
+		<div><input placeholder="name" type="text" name="username" value=""></div>
+		<!-- Тэг input  
+			Атрибут type определяет метод приёма данных от пользователя
+			Атрибут Name имя 
+			Атрибут value значение 
+			Тип tel перключит клавиатуру на телефоне на цифровую 
+			Атрибут placeholder подпись поля 
+			Атрибут disabled блокирует любые действия с полем   
+			Атрибут tabindex начиная с 1 определяет порядок перехода при начатии tab-->
+				<div><input type="tel" name="" value=""></div>
+
+		<div><input tabindex="1" disabled type="password" name="userpass" value=""></div>
+		<!-- Для поролей  -->
+		<div>
+			<p><input checked type="radio" name="deer" value="lager" > light deer </p>
+			<P><input type="radio" name="deer" value="dark"> dark beer </P> 
+			<!-- Атрибут radio кнопки выбора
+				Атрибут checked выбор по умолчанию-->
+		</div>
+		<br>	
+		<div>
+			<p><input type="radio" name="deer2" value="lager" > light deer </p>
+			<P><input checked type="radio" name="deer2" value="dark"> dark beer </P> 
+		</div>	
+		<br>
+		<div>
+			<p><input type="checkbox" name="car" value="yes" > car availability </p>
+			<!-- Атрибут checkbox флажки  -->
+			<p><input checked type="checkbox" name="car2" value="yes" > car availability2 </p>
+			<p><input type="checkbox" name="car3" value="yes" > car availability3 </p>
+			<p><input checked type="checkbox" name="car4" value="yes" > car availability4 </p>
+		</div>
+		<br>
+		<div>
+			<p><input type="file" name="foto" ></p>
+			<!-- Кнопка выбора файла  -->
+		</div>
+		<br>
+		<div>
+				<textarea name="text" ></textarea>
+				<!-- Поле для ввода крупного многострочного техта  -->
+		</div>
+		<br>
+		<div>
+			<select name="color">
+				<!-- multiple выбор нескольких -->
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+				<option selected value="blue">blue</option>
+			</select>
+			<!-- выподающий список -->
+		</div>
+		<br>
+		<div>
+			<button type="submit">отправить</button>
+			<!-- кнопка 
+			атрибут submit при нажатии отправятся все поля 
+			атрибут reset вся форма очистится -->
+		</div>
+	</form>
+
+	</body>
+
+</html>
